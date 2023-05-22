@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <h1 id="heading" style="color:coral; cursor: pointer; display: flex; align-items: center; justify-content: center;">Hello world!!!</h1> 
+  <h2> Double Click the text <em> "Hello world" </em>to see the effect. </h2>
+   <script>  
+    document.getElementById("heading").ondblclick = function() { fun() };  
+    
+    function fun() {  
+    document.getElementById("heading").innerHTML = " Welcome to Javascript ";  
+    }  
+    </script>
+</body>
+</html>
