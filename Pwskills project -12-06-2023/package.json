@@ -1,0 +1,11 @@
+{
+  "name": "testpackage",
+  "version": "1.0.0",
+  "description": "This is a test package for node.js assignment from pw-skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm pwtest1"
+  },
+  "author": "Pushkar",
+  "license": "ISC"
+}
