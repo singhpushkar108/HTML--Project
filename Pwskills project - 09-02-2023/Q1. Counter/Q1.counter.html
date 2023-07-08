@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Capitalize</title>
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+   <header>Word Counter</header>
+   
+    <main><form action="">
+        <fieldset>
+            <legend>Enter the strings</legend>
+            <label for="counter">Enter a series of strings:</label>
+            <input type="text" name="counter" id="counter"><br>
+            <button id="btn">Submit</button><br>
+            <div id="result" style="color: firebrick; font-family:sans-serif; font-size: 30px"></div>
+            
+        </fieldset>
+    </form>
+    <script>
+        document.getElementById("btn").onclick = function() { counter(event) };
+        
+        function counter(e){
+            e.preventDefault()
+            var str=document.getElementById("counter").value;
+            const words=str.split(' ');
+            let obj={};
+            
+            for(let i=0;i<words.length-1;i++){
+                if (!(words[i] in obj)){
+                    let count=0;
+                    for (let j=i;j<words.length;j++){
+                        if (words[i]==words[j]){
+                            count=count+1;
+                        }
+
+                    }
+                    obj[words[i]]=count;
+                }
+
+            }
+
+            console.log(obj);
+                        document.getElementById("result").innerHTML=JSON.stringify(Object.entries(obj));
+        }
+        
+
+        
+    </script>
+    </main>
+</body>
+</html>

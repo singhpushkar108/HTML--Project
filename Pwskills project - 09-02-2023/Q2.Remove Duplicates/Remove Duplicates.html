@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove Duplicates</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>Remove Duplicates</header>
+    <main><div id="result"></div><br>
+    <div id="result2"></div>
+    </main>
+    
+    <script>
+        
+        let arr=[];
+        let temp=[];
+        var total=Number(prompt("enter the length of the array"))
+        var item;
+        
+        for(let i=0; i<total; i++){
+            item=Number(prompt((i+1)+":"));
+            arr.push(item);
+        }
+        
+        document.getElementById("result").innerHTML="The original array: " + arr;
+        
+        for(let j=0; j<total; j++){
+            temp=arr.slice((j+1),(total));
+            ind=temp.indexOf(arr[j]);
+            if (ind>-1 ){
+                arr.splice(ind+j+1,1);
+            }
+        }
+        
+        document.getElementById("result2").innerHTML="The modified cart items: "+arr;
+        
+        
+        
+        
+    </script>
+    
+</body>
+</html>
