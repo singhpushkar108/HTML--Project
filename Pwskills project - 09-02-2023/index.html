@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Query</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container{
+            background-color: aquamarine;
+            width: 90vw;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            color: black;
+            border-radius: 30px;
+            
+            }
+        
+        
+        .main{
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        
+        @media screen and (min-width:1441px){
+        
+            .container{
+            background-color: aquamarine;
+            }
+        }
+        
+
+        @media screen and (min-width:1025px) and (max-width:1440px){
+            
+            .container{
+                background-color: green;
+            }
+            
+            .blue,.brown,.red{
+                display: none;
+            }
+            
+        }
+        
+        @media screen and (min-width:769px) and (max-width:1024px){
+            
+            .container{
+                background-color: saddlebrown;
+            }
+            
+            .green,.blue,.red{
+                display: none;
+            
+            }
+        }
+            
+        @media screen and (min-width:427px) and (max-width:768px){
+            
+            .container{
+                background-color: aqua;
+            }
+            
+            .green,.brown,.red{
+                display: none;
+            }
+        
+        }
+        
+            
+        @media screen and (max-width:425px){
+            
+            .container{
+                background-color: darkred;
+            }
+            
+            .green,.blue,.brown{
+                display: none;
+            }
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="main">This is a Media Query demo Page</span>
+        <span class="green">Screen size : 1440px</span>
+        <span class="brown">Screen size : 1024px</span>
+        <span class="blue">Screen size : 768px</span>
+        <span class="red">Screen size : 425px</span>
+    </div>
+</body>
+</html>
