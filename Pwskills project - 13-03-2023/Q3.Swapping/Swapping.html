@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swapping</title>
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+   <header>Swapping</header>
+   
+    <main><form action="">
+        <fieldset>
+            <legend>Swap the numbers</legend>
+            <label for="num1">Enter First Number:</label>
+            <input type="number" name="num1" id="num1"><br>
+            <label for="num2">Enter Second Number:</label>
+            <input type="number" name="num2" id="num2"><br>
+            <button id="btn">Submit</button><br>
+            
+        </fieldset>
+    </form>
+    <div id="result" style="color: firebrick; font-family: fantasy; font-weight: 500;"></div>
+    <div id="result2" style="color: firebrick; font-family: fantasy; font-weight: 500;"></div>
+    
+    <script>
+        document.getElementById("btn").onclick = function() { valid(event) };
+        
+        function valid(e){
+            e.preventDefault()
+            var num1=Number(document.getElementById("num1").value);
+            var num2=Number(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML=`First Num :${num1} and Second Num: ${num2} `;
+            [num1,num2]=[num2,num1];
+            
+            document.getElementById("result2").innerHTML=`First Num :${num1} and Second Num: ${num2} `;
+            
+//            if(num1=='' || num2==''){
+//                alert("Please input values in both the fields");
+//            }
+//            else{
+//                if(num1==num2){
+//                    alert("Password Matched. Password validation Successful.");
+//                    document.getElementById("result").innerHTML="Password Matched. Password validation Successful.";
+//                }
+//                else{
+//                    alert("Password didn't match. Password validation unsuccessful");
+//                    document.getElementById("result").innerHTML="Password didn't match. Password validation unsuccessful";
+//                }
+//            }
+            
+        
+        }
+        
+
+        
+    </script>
+    </main>
+</body>
+</html>
