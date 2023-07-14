@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse out
+    </title>
+    <script>
+        function myFunction() {
+          let x = document.getElementById("fname");
+          x.value = x.value.toUpperCase();
+        }
+        
+        function keyrel(){
+            alert(" Key Released ")
+        }
+        
+    </script>
+</head>
+<body>
+<span>Type</span><input id="fname" type="text" onkeyup="keyrel()" onkeydown="myFunction()">
+</body>
+</html>

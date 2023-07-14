@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nested Objects</title>
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+   <header>Nested Objects</header>
+   
+    <script>
+        function extract(person) {
+          const { name, address: { street } } = person;
+          return { name, street };
+        }
+        
+        const person = {};
+        const name = prompt('Enter name:');
+        const age= prompt('Enter Age')
+        person.name = name;
+        person.age=age;
+        
+
+        // Taking input for address
+        const address = {};
+        address.street = prompt('Enter street:');
+        address.city = prompt('Enter city:');
+        address.state= prompt('Enter State:')
+        person.address = address;
+        
+        console.log(person);
+        let res=extract(person);
+        let value=JSON.stringify(res);
+        console.log(value);
+        
+        alert("check console");
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    width:100vw;
+    background-color:white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin-left: 150px;
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 10%;
+}
+
+.logo{
+    margin-left: 10px;
+    width: 120px;
+    height: 50px;
+    padding: 2px
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu ul{
+    display: flex;
+    column-gap: 40px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 300px;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color:black;
+}
+
+button{
+    background-color: mediumpurple;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+    width:100%;
+    height: 100%;
+}
+
+
+.main-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2%;
+    justify-content: center;
+    width: 50%;
+    height: 80%;
+}
+
+#adv{
+   font-weight: 600;
+    font-size: 42px;
+    color:darkslateblue;
+    
+}
+
+pre{
+    margin-top: 5%;
+    font-size: 15px;
+    color: dimgray;
+
+}
+
+.b1{
+    width: 60%;
+    margin-top: 8%;
+}
+
+.main-right{
+    width: 50%;
+    height: 75%;
+}
+
+/*
+
+
+
+#b1{
+    margin-top: 50px;
+}
+
+
+main{
+    margin-top:150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-div1{
+    font-weight: 600;
+    font-size: 42px;
+    margin-right: 400px;
+    color:darkslateblue;
+}
+
+.main-div2{
+    border: 2px solid red;
+    height:150%;
+}
+
+#p1{
+    margin-top: 15px;
+    font-size: 10px;
+    color: dimgray;
+}*/
