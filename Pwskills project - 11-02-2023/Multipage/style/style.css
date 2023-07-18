@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../assets/stethoscope.png");
+    background-repeat: no-repeat;
+    background-size:500px 500px;
+    background-position:center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:100vw;
+    height:10vh;
+    padding-left: 20px;
+    padding-right: 50px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+
+img[alt="logo"]{
+    width: 150px;
+    height: 50px;
+    margin-left: 30px;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    height: 50%;
+    margin-right: 60px;
+    list-style: none;
+}
+
+li{
+    cursor: pointer;
+}
+
+#home{
+    color:mediumseagreen;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+    font-family: monospace;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.quote{
+    height: 55%;
+    width: 100%;
+}
+
+pre{
+    font-size: 70px;
+    font-weight: bolder;
+    line-height: 90px;
+}
+
+.info{
+    height: 10%;
+    padding:
+    color:gray;
+}
+
+.lowAngle{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 92%;
+    height: 65px;
+    margin-top: 10px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:270px;
+    height: 60px;
+    font-size:20px;
+    border-radius: 30px;
+    background-color:mediumseagreen;
+    font-weight: bolder;
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+
+.mouse{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
+figure{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 150px;
+    
+}
+
+img[alt="greenCr"]{
+    width: 350px;
+    height:350px;
+    
+}
+
+img[alt="overl-ylw"]{
+    position: absolute;
+    top: 140px;
+    left: 225px;
+    z-index: 1;
+    width: 300px;
+    height:300px;
+    margin-left: 80px;
+}
+
+img[alt="overl-doc"]{
+    position: absolute;
+    bottom: 60px;
+    left: 150px;
+    z-index:2;
+    width:350px;
+    height:500px;
+    margin-left: 80px;
+}
+
+
